@@ -1,0 +1,10 @@
+<% include header.html %>
+<h1>文章列表</h1>
+<% for(var i=0; i < entries.length; i++){  %>
+    <p>
+        <a href="/article/<%=entries[i].id %>"><%=entries[i].title %></a>
+        <br>
+        <span>时间: <%=entries[i].published %></span>        
+    </p>
+<% } %>  
+<% include footer.html %>
